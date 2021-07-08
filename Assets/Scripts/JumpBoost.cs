@@ -12,6 +12,7 @@ public class JumpBoost : MonoBehaviour
         {
             player.GetComponent<move>().jumpHeight += 1f;
             player.GetComponent<move>().isGrounded = true;
+            FindObjectOfType<AudioManager>().Play("PowerUp");
             Destroy(gameObject);
         }
     }

@@ -37,12 +37,12 @@ public class Generate : MonoBehaviour
     {
         if (Random.Range(0f, 10f) <= 5f)
         {
-            jumpBoost = Instantiate(jumpParent, new Vector2(jumpPos.x + Random.Range(25f, 150f), jumpPos.y + Random.Range(-1f, 5f)), rotation);
+            jumpBoost = Instantiate(jumpParent, new Vector2(jumpPos.x + Random.Range(25f, 150f), jumpPos.y + Random.Range(-1f, 7f)), rotation);
             jumpPos = jumpBoost.transform.position;
         }
         else
         {
-            speedBoost = Instantiate(speedParent, new Vector2(speedPos.x + Random.Range(25f, 150f), speedPos.y + Random.Range(-1f, 5f)), rotation);
+            speedBoost = Instantiate(speedParent, new Vector2(speedPos.x + Random.Range(25f, 150f), speedPos.y + Random.Range(-1f, 7f)), rotation);
             speedPos = speedBoost.transform.position;
         }
     }
